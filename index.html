@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-sacle=1.0">
+    <title>Eunice Park | Portfolio</title>
+    <link rel="stylesheet" href=""styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+     <header>
+        <h1>Hi, Eunice here</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact </a>
+        </nav>
+     </header>
+
+     <!-- About Section -->
+     <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a fourth-year Economics and Computer Science student at the University of Ottawa, studying in French with a strong interest in blending technology and finance. Currently, I work as an IT student with Public Services and Procurement Canada, where I apply my accounting background to support tech initiatives. Inspired by my mother—a self-made finance professional—I'm committed to building a career that advances technology and creates meaningful value in the financial world. I look forward to connecting with others who share a vision for tech-driven progress.</p>
+     </section>
+
+     <!--Projects Section-->
+     <section id="projects">
+        <h2>Projects</h2>
+        <div class=""project-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h3>Project Title 1</h3>
+                <p>Brief description of the project.</p>
+                <a href="https://github.com/yourusername/project1" target="_blank">Github</a>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+     </section>
+
+     <!-- Contact Section -->
+     <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out through any of the following platforms:</p>
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/eunicepark28/" target="blank">LinkedIn</a>
+            <a href="https://github.com/eparrk" target="_blank">GitHub</a>
+            <a href="mailto:euniceparrk@gmail.com">Email</a>
+        </div>
+     </section>
+
+     <!--Footer-->
+     <Footer>
+        <p>&copy; 2024 Eunice Park. All rights reserved.</p>
+     </Footer>
+
+     <script>
+        // Create the cursor effect circle
+        const cursor = document.createElement('div');
+        cursor.classList.add('cursor');
+        document.body.appendChild(cursor);
+
+        // Update cursor position as mouse moves
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = '${e.pageX}px';
+            cursor.style.top = '${e.pageY}px';
+        });
+
+        // Add hover effect to header and navigation links
+        const headerElements = document.querySelectorAll('header h1, header nav a');
+        headerElemnents.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                cursor.style.backgroundColor = 'rgba(243, 226, 230)';
+            });
+            element.addEventListener('mouseleave', () => {
+                cursor.style.backgroundColor = 'rgba(243, 226, 230)';
+            });
+        });
+     </script>
+
+</body>
+</html>

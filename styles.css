@@ -1,0 +1,67 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    overflow: hidden; /*Prevents unwanted scrollbars when tracking cursor */
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+header nav a {
+    margin: 0 1 rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Pink Highlight on Hover */
+header:hover h1,
+header:hover nav a {
+    color: #f5b8b8;
+}
+
+/* Cursor Effect Circle */
+.cursor {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(243, 226, 230);
+    border-radius; 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    z-index: 1000;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .project-card {
+        width: 100%;
+    }
+}
