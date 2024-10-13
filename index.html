@@ -2,81 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-sacle=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eunice Park | Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Header -->
-     <header>
-        <h1>Hi, Eunice here</h1>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, my name is Eunice</h1>
+            <p class="hero-subtext">I'm passionate about technology, finance, and creating meaningful digital experiences.</p>
+        </div>
+    </section>
+
+    <!-- Navigation Bar -->
+    <header>
         <nav>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact </a>
+            <a href="#contact">Contact</a>
         </nav>
-     </header>
+    </header>
 
-     <!-- About Section -->
-     <section id="about">
+    <!-- About Section -->
+    <section id="about">
         <h2>About Me</h2>
-        <p>I'm a fourth-year Economics and Computer Science student at the University of Ottawa, studying in French with a strong interest in blending technology and finance. Currently, I work as an IT student with Public Services and Procurement Canada, where I apply my accounting background to support tech initiatives. Inspired by my mother—a self-made finance professional—I'm committed to building a career that advances technology and creates meaningful value in the financial world. I look forward to connecting with others who share a vision for tech-driven progress.</p>
-     </section>
+        <p>I'm a fourth-year Economics and Computer Science student at the University of Ottawa, studying in French. Currently, I work as an IT student in Public Services and Procurement Canada in the human capital management solutions branch for the Government of Canada, where I apply my accounting background to support tech initiatives. Inspired by my mother—a self-made finance professional—I'm committed to building a career that advances technology and creates meaningful value in the financial world.
+            I look forward to connecting with others with a vision for tech-driven progress.>
 
-     <!--Projects Section-->
-     <section id="projects">
+    <!-- Projects Section -->
+    <section id="projects">
         <h2>Projects</h2>
-        <div class=""project-grid">
-            <!-- Project 1 -->
+        <div class="project-grid">
             <div class="project-card">
                 <h3>Project Title 1</h3>
                 <p>Brief description of the project.</p>
-                <a href="https://github.com/yourusername/project1" target="_blank">Github</a>
+                <a href="https://github.com/yourusername/project1" target="_blank">GitHub</a>
             </div>
-            <!-- Add more project cards as needed -->
         </div>
-     </section>
+    </section>
 
-     <!-- Contact Section -->
-     <section id="contact">
+    <!-- Contact Section -->
+    <section id="contact">
         <h2>Contact</h2>
         <p>Feel free to reach out through any of the following platforms:</p>
         <div class="contact-links">
-            <a href="https://www.linkedin.com/in/eunicepark28/" target="blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/eunicepark28/" target="_blank">LinkedIn</a>
             <a href="https://github.com/eparrk" target="_blank">GitHub</a>
             <a href="mailto:euniceparrk@gmail.com">Email</a>
         </div>
-     </section>
+    </section>
 
-     <!--Footer-->
-     <Footer>
-        <p>&copy; 2024 Eunice Park. All rights reserved.</p>
-     </Footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Eunice Park @2024 </p>
+    </footer>
 
-     <script>
-        // Create the cursor effect circle
-        const cursor = document.createElement('div');
-        cursor.classList.add('cursor');
-        document.body.appendChild(cursor);
-
-        // Update cursor position as mouse moves
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = '${e.pageX}px';
-            cursor.style.top = '${e.pageY}px';
-        });
-
-        // Add hover effect to header and navigation links
-        const headerElements = document.querySelectorAll('header h1, header nav a');
-        headerElemnents.forEach(element => {
-            element.addEventListener('mouseenter', () => {
-                cursor.style.backgroundColor = 'rgba(243, 226, 230)';
-            });
-            element.addEventListener('mouseleave', () => {
-                cursor.style.backgroundColor = 'rgba(243, 226, 230)';
+    <!-- Smooth Scrolling JavaScript -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
-     </script>
+    </script>
 
 </body>
 </html>
