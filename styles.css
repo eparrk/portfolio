@@ -266,6 +266,13 @@ p {
     }
 }
 
+@media (min-width: 1200px) {
+    .projects-card {
+        width: 95%;
+        max-width: none;
+    }
+}
+
 /* Contact Links */
 .contact-links a {
     display: inline-block;
