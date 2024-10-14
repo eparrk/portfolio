@@ -154,6 +154,8 @@ p {
 /* Projects Section */
 #projects {
     padding: 20px;
+    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,15 +163,12 @@ p {
 
 .container {
     width: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    max-width: 100px;
 }
 
 .projects-card {
-    width: 80%;
-    max-width: 800px;
+    width: 90%;
+    max-width: 1200px;
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
@@ -178,30 +177,24 @@ p {
     background-color: #fff;
 }
 
-/* Adjustments for larger screens */
-@media (min-width: 1200px) {
-    .projects-card {
-        width: 70%;
-    }
-}
-
 /* Responsive adjustments for different screen sizes */
 @media (max-width: 1024px) {
     .projects-card {
-        width: 90px;
+        max-width: 800px;
+        padding: 15px;
     }
 }
 
 @media (max-width: 768px) {
     .projects-card {
-        width: 95%;
-        padding: 15px;
+        max-width: 600px;
+        padding: 10px;
     }
 }
 
 @media (max-width: 600px) {
     .projects-card {
-        width: 100%;
+        width: 90%;
         padding: 10px;
     }
 }
@@ -252,6 +245,14 @@ p {
     color: gray;
 }
 
+/* Media Query for Mobile Devices */
+@media (min-width: 1200px) {
+    .project-card {
+        width: 95%;
+        max-width: none;
+    }
+}
+
 /* Card Styles */
 .project-card {
     width: 400px;
@@ -259,17 +260,10 @@ p {
     margin: 20px auto;
 }
 
-/* Media Query for Mobile Devices */
+/* Media Query for Small Screens */
 @media (max-width: 600px) {
     .project-card {
         width: 90%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .projects-card {
-        width: 95%;
-        max-width: none;
     }
 }
 
