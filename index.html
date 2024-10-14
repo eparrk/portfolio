@@ -11,6 +11,9 @@
 </head>
 <body>
 
+    <!-- Canvas for interactive floral background -->
+    <canvas class="canvas-background"></canvas>
+    
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero-content">
@@ -167,47 +170,6 @@
             });
         });
 
-        // Create a stars container and append it to the body
-        const starsContainer = document.createElement('div');
-        starsContainer.classList.add('stars');
-        document.body.appendChild(starsContainer);
-
-        // Function to create stars with random position, size, and twinkle speed
-        function createStars() {
-            const numberOfStars = 100;  // Adjust for more or fewer stars
-
-            for (let i = 0; i < numberOfStars; i++) {
-                const star = document.createElement('div');
-                star.classList.add('star');
-
-                // Random size, position, and animation speed
-                const size = Math.random() * 3 + 1;  // Star size between 1px and 4px
-                const posX = Math.random() * 100;  // Horizontal position as a percentage
-                const posY = Math.random() * 100;  // Vertical position as a percentage
-                const delay = Math.random() * 2;  // Animation delay between 0s and 2s
-
-                star.style.width = `${size}px`;
-                star.style.height = `${size}px`;
-                star.style.top = `${posY}vh`;
-                star.style.left = `${posX}vw`;
-                star.style.animationDelay = `${delay}s`;
-
-                // Append star to the stars container
-                starsContainer.appendChild(star);
-            }
-        }     
-
-        // Parallax effect for stars on mouse movement
-        document.addEventListener('mousemove', (e) => {
-            const { clientX, clientY } = e;
-            const moveX = (clientX / window.innerWidth - 0.5) * 10;
-            const moveY = (clientY / window.innerHeight - 0.5) * 10;
-
-            starsContainer.style.transform = `translate(${moveX}px, ${moveY}px)`;
-});
-
-        // Call function to create stars
-        createStars();
     </script>
 </body>
 </html>

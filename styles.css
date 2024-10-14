@@ -11,9 +11,8 @@ html {
 }
 
 body {
-    background: radial-gradient(circle at 20% 30%, #1a2a6c, #b21f1f, #fdbb2d);
-    background-color: #000;
-    color: #ffffff;
+    background: #f5f5dc;
+    color: #333333;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
@@ -22,39 +21,18 @@ body {
     font-size: 16px;
     line-height: 1.6;
     padding: 20px;
+    overflow: hidden;
 }
 
-/* Starlit Sky Background */
-body {
-    background: radial-gradient(circle at 20% 30%, #000033, #000011, #000);
-    color: #ffffff;
-    overflow-x: hidden;
-}
-
-/* Stars Container */
-.stars {
+/* Ensure the canvas covers the full background */
+.canvas-background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     z-index: -1;
     pointer-events: none;
-}
-
-/* Star Styling */
-.star {
-    position: absolute;
-    background-color: rgba(255,255,255,0.8); /* Bright white star color */
-    border-radius: 50%;
-    animation: twinkle 2s infinite ease-in-out;
-    box-shadow: 0 0 6px rgba(255,255,255,0.6); /* Soft flow effect */
-}
-
-/* Twinkling Animation */
-@keyframes twinkle {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% {opacity: 0.5; transform: scale(1.1); }
 }
 
 /* Hero Section */
