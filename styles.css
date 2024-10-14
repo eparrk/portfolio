@@ -73,8 +73,10 @@ header nav a {
     transition: color 0.3s;
 }
 
-header nav a:hover {
+header nav a:hover,
+header nav a.active {
     color: #eea1c7; /* Pink highlight on hover */
+    font-weight: bold;
 }
 
 /* Section Styles */
@@ -142,6 +144,7 @@ p {
 
 .skill-card:hover {
     transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
 }
 
 .skill-card img {
@@ -182,27 +185,6 @@ p {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    box-sizing: border-box;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-    .projects-card {
-        max-width: 90%;
-    }
-}
-
-@media (max-width: 768px) {
-    .projects-card {
-        max-width: 95%;
-    }
-}
-
-@media (max-width: 600px) {
-    .projects-card {
-        max-width: 90%;
-        padding: 10px;
-    }
 }
 
 .project-details {
@@ -247,19 +229,13 @@ p {
     flex: 1;
 }
 
-/* Media Query for Mobile Devices */
-@media (min-width: 1200px) {
-    .project-card {
-        max-width: 85%;
-    }
-}
-
 /* Contact Links */
 .contact-links a {
     display: inline-block;
     margin: 0.5rem;
     color: #fcbef1; /* Link color for contact */
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 .contact-links a:hover {
@@ -275,28 +251,28 @@ footer {
     border-top: 1px solid #ddd; /* Border color */
 }
 
-/* Cursor Effect Circle */
-.cursor {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(253, 117, 185, 0.3);
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: transform 0.1s ease-out;
-    z-index: 1000;
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .projects-card {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-card {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects-card {
+        max-width: 90%;
+        padding: 10px;
+    }
 }
 
 /* Animation */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    .project-card {
-        width: 100%;
-    }
 }
