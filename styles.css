@@ -80,18 +80,18 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 
 #hero {
     position: relative;
-    color: white;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #ffffff
 }
 
 .hero-content {
     position: relative;
     z-index: 1; /* Ensures your text appears above the particles */
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Navigation Bar Style */
