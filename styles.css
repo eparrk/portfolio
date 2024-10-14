@@ -24,6 +24,40 @@ body {
     padding: 20px;
 }
 
+/* Starlit Sky Background */
+body {
+    background: radial-gradient(circle at 20% 30%, #000033, #000011, #000);
+    color: #ffffff;
+    overflow: hidden;
+}
+
+/* Stars Container */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Star Styling */
+.star {
+    position: absolute;
+    background-color: rgba(255,255,255,0.8); /* Bright white star color */
+    border-radius: 50%;
+    animation: twinkle 2s infinite ease-in-out;
+    box-shadow: 0 0 6px rgba(255,255,255,0.6); /* Soft flow effect */
+}
+
+/* Twinkling Animation */
+@keyframes twinkle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% {opacity: 0.5; transform: scale(1.1); }
+}
+
 /* Hero Section */
 #hero {
     display: flex;
