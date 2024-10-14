@@ -75,10 +75,10 @@ header {
     top: 0;
     width: 100%;
     padding: 1rem;
-    background-color: rgba(5, 5, 5, 0.9); /* Slightly transparent background */
+    background-color: rgba(18, 18, 64, 0.8); 
     display: flex;
-    justify-content: center;
-    border-bottom: 1px solid #333; /* Border color */
+    justify-content: flex-end;
+    border-bottom: 1px solid #121240cc; /* Border color */
     z-index: 10;
 }
 
@@ -206,8 +206,8 @@ p {
     border: 1px solid #333;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: rgba(20,20,20,0.8);
-    color: #ecdde7;
+    background: #c60202(20,20,20,0.8);
+    color: #333333;
 }
 
 .project-details {
