@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background: #000204;
+    background: radial-gradient(circle at 20% 30%,#1a2a6c, #000033, #000011);
     color: #ecdde7;
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -21,6 +21,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     padding: 20px;
+    overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6 {
