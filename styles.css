@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background: radial-gradient(circle at 20% 30%,#071238, #000033, #000011);
+    background: radial-gradient(circle at 20% 30%,#010515, #000033, #000011);
     color: #ecdde7;
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -24,12 +24,9 @@ body {
     overflow-x: hidden;
 }
 
-h1,h2,h3,h4,h5,h6 {
+/* Ensure specific sections and headings are also pink */
+h1, h2, h3, h4, h5, h6, p, a, span, li {
     color: #ecdde7; /* Ensures all headings are this color */
-}
-
-p,a,span,li {
-    color: #ecdde7;
 }
 
 /* Ensure the canvas covers the full background */
@@ -97,7 +94,6 @@ header nav a {
 header nav a:hover,
 header nav a.active {
     color: #eea1c7; /* Pink highlight on hover */
-    font-weight: bold;
 }
 
 /* Section Styles */
