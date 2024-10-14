@@ -220,7 +220,7 @@ color: #ecdde7;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background: #ecdde7;
-    color: #333333;
+    color: #000033;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -237,7 +237,7 @@ color: #ecdde7;
     margin-top: 10px;
     font-size: 0.9em;
     line-height: 1.4;
-    color: #000033;
+    color: #ecdde7;
     text-align: left;
 }
 
