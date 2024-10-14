@@ -161,13 +161,14 @@ p {
 }
 
 .projects-card {
-    width: 90%;
-    padding: 30px;
+    width: 100%;
+    padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    max-width: none;
     text-align: justify;
 }
 
