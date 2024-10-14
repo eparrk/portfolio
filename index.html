@@ -254,7 +254,7 @@
                 const sectionTop = section.offsetTop - 80;
                 const sectionBottom = sectionTop + section.offsetHeight;
 
-                if (pageYOffset >= sectionTop && pageYOffset < sectionBottom) {
+                if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionBottom) {
                     currentSection = section.getAttribute("id");
                 }
             });
@@ -282,6 +282,10 @@
                     top: offsetPosition,
                     behavior: "smooth"
                 });
+
+                // Highlight the clicked link immediately
+                document.querySelectorAll("header nav a").forEach(link => link.classList.remove("active"));
+                this.classList.add("active");
             });
         });
     </script>

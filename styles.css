@@ -118,7 +118,8 @@ header nav a {
 
 header nav a:hover,
 header nav a.active {
-    color: #eea1c7; /* Pink highlight on hover */
+    color: #e66666; /* Pink highlight on hover */
+    font-weight: bold;
 }
 
 /* Title Styling with Shadow and Highlight */
