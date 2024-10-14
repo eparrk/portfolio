@@ -155,21 +155,24 @@ p {
 #projects {
     padding: 20px;
     width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
 }
 
 .projects-card {
     width: 100%;
-    max-width: 100%;
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    text-align: justify;
 }
 
 /* Header within each card */
