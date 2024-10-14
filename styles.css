@@ -63,7 +63,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh; /* Full screen height */
-    background-color: #fafafa; /* Background color */
+    background: transparent; /* Background color */
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -76,14 +76,14 @@ body {
 #hero h1 {
     font-size: 3rem;
     font-weight: bold;
-    color: #333; /* Heading text color */
+    color: #ffffff; /* Heading text color */
     margin-bottom: 1rem;
     font-family: 'Playfair Display', serif; /* Font for hero heading */
 }
 
 .hero-subtext {
     font-size: 1.2rem;
-    color: #555; /* Subtext color */
+    color: #cccccc; /* Subtext color */
 }
 
 /* Navigation Bar Style */
@@ -139,6 +139,8 @@ p {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background: transparent;
+    color: #ffffff; /* Text color */
 }
 
 .about-text {
@@ -152,7 +154,7 @@ p {
 }
 
 #skills {
-    background-color: #1e1e1e;
+    background-color: transparent;
     color: #ffffff;
     padding: 40px 0;
     text-align: center;
@@ -200,6 +202,7 @@ p {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    background: transparent;
 }
 
 .container {
@@ -219,7 +222,8 @@ p {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background: rgba(255,255,255,0.1);
+    color: #ffffff;
 }
 
 .project-details {
@@ -265,12 +269,14 @@ p {
 }
 
 /* Contact Links */
+#contact {
+    padding: 20px;
+    background: transparent;
+    color: #ffffff;
+}
+
 .contact-links a {
-    display: inline-block;
-    margin: 0.5rem;
-    color: #fcbef1; /* Link color for contact */
-    text-decoration: none;
-    transition: color 0.3s;
+    color: #fcbef1;
 }
 
 .contact-links a:hover {
@@ -282,8 +288,9 @@ footer {
     margin-top: 2rem;
     padding: 1rem;
     font-size: 0.8rem;
-    color: #666; /* Footer text color */
+    color: #ffffff; /* Footer text color */
     border-top: 1px solid #ddd; /* Border color */
+    background: transparent
 }
 
 /* Responsive Design */
