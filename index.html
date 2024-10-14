@@ -184,12 +184,12 @@
         window.addEventListener('resize', resizeCanvas);
 
         // Function to draw a line segment for a single petal
-        function drawLineSegment(startX, startY, endX, endY, color, lineWidth) {
+        function drawLineSegment(startX, startY, controlX, controlY, endX, endY, color, lineWidth) {
             ctx.strokeStyle = color;
             ctx.lineWidth = lineWidth;
             ctx.beginPath();
             ctx.moveTo(startX, startY);
-            ctx.lineTo(endX, endY);
+            ctx.lineTo(controlX, controlY);
             ctx.stroke();
         }
 
@@ -203,18 +203,16 @@
             // Define each segment of the flower as start and end points
             const flowerSegments = [
                 // Stem segments
-                { startX: x, startY: y, endX: x, endY: y + 30, color: stemColor }, // stem part 1
-                { startX: x, startY: y + 30, endX: x + 5, endY: y + 45, color: stemColor }, // stem part 2
+                { startX: x, startY: y, controlX: x + 5, controlY: y + 15, endX: x, endY: y + 30, color: stemColor }, // stem part 1
+                { startX: x, startY: y + 30, controlX: x - 5, controlY: y + 40, endX: x, endY: y + 50, color: stemColor }, // stem part 2
 
                 // Petal segments (drawn clockwise around the stem)
-                { startX: x, startY: y, endX: x - 15, endY: y - 20, color: petalColor },
-                { startX: x - 15, startY: y - 20, endX: x, endY: y - 35, color: petalColor },
-                { startX: x, startY: y - 35, endX: x + 15, endY: y - 20, color: petalColor },
-                { startX: x + 15, startY: y - 20, endX: x, endY: y, color: petalColor },
+                { startX: x, startY: y, controlX: x - 20, controlY: y - 20, endX: x - 10, endY: y - 30, color: petalColor },
+                { startX: x - 10, startY: y - 30, controlX: x, controlY: y - 50, endX: x + 10, endY: y - 30, color: petalColor },
+                { startX: x + 10, startY: y - 30, controlX: x + 20, controlY: y - 20, endX: x, endY: y, color: petalColor },
 
                 // Leaf on the stem
-                { startX: x, startY: y + 20, endX: x - 10, endY: y + 30, color: petalColor },
-                { startX: x - 10, startY: y + 30, endX: x, endY: y + 40, color: petalColor }
+                { startX: x, startY: y + 20, controlX: x - 15, controlY: y + 30, endX: x, endY: y + 40, color: petalColor }
             ];
 
             // Function to draw each segment in sequence
@@ -229,6 +227,8 @@
                 drawLineSegment(
                     segment.startX,
                     segment.startY,
+                    segment.controlX,
+                    segment.controlY,
                     segment.endX,
                     segment.endY,
                     segment.color,
@@ -239,7 +239,7 @@
             }
 
             // Draw each segment with a delay to create the "drawing" effect
-            const segmentInterval = setInterval(drawNextSegment, 150);
+            const segmentInterval = setInterval(drawNextSegment, 200);
         }
 
         // Function to initiate drawing flowers in random positions
@@ -248,8 +248,8 @@
             const y = Math.random() * canvas.height;
             drawFlower(x, y);
 
-            // Draw a new flower every 2 seconds
-            setTimeout(animateFlowers, 2000);
+            // Draw a new flower every 3 seconds
+            setTimeout(animateFlowers, 3000);
         }
 
         // Start the flower drawing animation
