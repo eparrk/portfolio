@@ -161,7 +161,7 @@ p {
 /* Container for side-by-side layout */
 .projects-grid {
     display: flex;
-    gap: 1.5 rem;
+    gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -176,6 +176,8 @@ p {
     transition: transform 0.2s;
     background-color: #fff;
     margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Hover effect */
