@@ -163,15 +163,15 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 2rem;
 }
 
 /* Individual project cards */
 .projects-card {
-    width: 100%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 1200px;
     padding: 2rem;
     border: 1px solid #ddd;
     border-radius: 8px;
