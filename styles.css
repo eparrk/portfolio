@@ -133,17 +133,14 @@ p {
 }
 
 .company-department {
+    text-align: left;
     margin-top: 5px;
+    font-size: 0.9em; /* Makes the text smaller */
 }
 
-.company {
+.company, .branch {
     display: block;
-    font-weight: bold;
-}
-
-.branch {
-    display: block;
-    margin-left: 10px;
+    font-weight: normal;
     font-style: italic;
     color: gray;
 }
@@ -153,6 +150,12 @@ p {
     padding-left: 20px;
     margin-top: 10px;
     text-align: justify;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.experience-details li {
+    margin-bottom: 5px;
 }
 
 /* Project Section */
