@@ -174,28 +174,33 @@ p {
 }
 
 .projects-card {
-    width: 95%;
-    max-width: 850%;
+    width: 100%;
+    max-width: 800%;
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    margin: 0 auto;
 }
 
-/* Responsive adjustments ffor project card */
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .projects-card {
+        max-width: 90%;
+    }
+}
+
 @media (max-width: 768px) {
     .projects-card {
         max-width: 95%;
-        padding: 15px;
     }
 }
 
 @media (max-width: 600px) {
     .projects-card {
         max-width: 90%;
-        padding: 10px;
     }
 }
 
