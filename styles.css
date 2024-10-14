@@ -79,7 +79,7 @@ header nav a:hover {
 
 /* Section Styles */
 section {
-    padding: 4rem 1rem 2rem 1rem;
+    padding: 2rem 1rem;
     width: 100%;
     max-width: 800px;
 }
@@ -177,13 +177,12 @@ p {
     width: 100%;
     max-width: 1200px;
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 0 ato 20px auto;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     box-sizing: border-box;
-    margin: 0 auto;
 }
 
 /* Responsive adjustments */
@@ -217,8 +216,8 @@ p {
 }
 
 .project-details li {
-    margin-bottom: 8px;
-    padding-left: 10px;
+    margin-bottom: 5px;
+    padding-left: 1.5rem;
 }
 
 /* Header within each card */
@@ -226,6 +225,16 @@ p {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+}
+
+/* Company and Department Styling */
+.company-department {
+    text-align: left;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: gray;
+    font-style: italic;
+    display: block;
 }
 
 /* Job Title and Dates */
@@ -239,24 +248,11 @@ p {
     flex: 1;
 }
 
-/* Company and Department Styling */
-.company-department {
-    text-align: left;
-    margin-top: 5px;
-    font-size: 0.9em;
-    color: gray;
-    font-style: italic;
-}
-
-.company, .branch {
-    display: block;
-    font-weight: normal;
-    font-style: italic;
-    color: gray;
-}
-
-.branch {
-    color: gray;
+/* Media Query for Mobile Devices */
+@media (min-width: 1200px) {
+    .project-card {
+        max-width: 85%;
+    }
 }
 
 /* Contact Links */
