@@ -28,7 +28,7 @@ body {
 body {
     background: radial-gradient(circle at 20% 30%, #000033, #000011, #000);
     color: #ffffff;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Stars Container */
@@ -37,9 +37,8 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    z-index: 0;
+    height: 100%;
+    z-index: -1;
     pointer-events: none;
 }
 
