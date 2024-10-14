@@ -93,6 +93,18 @@ p {
     color: #555; /* Paragraph text color */
 }
 
+#about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-text {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
 /* Experience Section */
 #experience {
     padding: 20px;
@@ -121,15 +133,19 @@ p {
 }
 
 .company-department {
-    display: flex;
-    justify-content: space-between;
     margin-top: 5px;
-    font-style: italic;
 }
 
 .company {
-    text-align: right;
-    flex: 1;
+    display: block;
+    font-weight: bold;
+}
+
+.branch {
+    display: block;
+    margin-left: 10px;
+    font-style: italic;
+    color: gray;
 }
 
 .experience-details {
@@ -137,10 +153,6 @@ p {
     padding-left: 20px;
     margin-top: 10px;
     text-align: justify;
-}
-
-.experience-details li {
-    margin-bottom: 5px;
 }
 
 /* Project Section */
