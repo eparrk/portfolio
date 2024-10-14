@@ -61,7 +61,7 @@ p,a,span,li {
 #hero h1 {
     font-size: 3rem;
     font-weight: bold;
-    color: #ffffff; /* Heading text color */
+    color: #ecdde7; /* Heading text color */
     margin-bottom: 1rem;
     font-family: 'Playfair Display', serif; /* Font for hero heading */
 }
@@ -125,7 +125,7 @@ p {
     margin: 0 auto;
     padding: 20px;
     background: transparent;
-    color: #ffffff; /* Text color */
+    color: #ecdde7; /* Text color */
 }
 
 .about-text {
