@@ -162,17 +162,19 @@ p {
 .projects-grid {
     display: block;
     gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 /* Individual project cards */
 .projects-card {
     width: 100%;
-    padding: 1.5 rem;
+    padding: 2 rem;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 /* Header section within each card */
@@ -185,19 +187,19 @@ p {
 
 .job-title {
     text-align: left;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .dates {
     text-align: right;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: gray;
 }
 
 /* Company and department details */
 .company-department {
     margin-top: 5px;
-    font-size: 0.9em;
+    font-size: 0.95em;
     font-style: italic;
     color: gray;
 }
@@ -209,12 +211,12 @@ p {
     margin-top: 15px;
     margin-bottom: 0;
     text-align: justify;
-    font-size: 0.9em;
-    line-height: 1.4;
+    font-size: 0.95em;
+    line-height: 1.5;
 }
 
 .projects-details li {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 /* Contact Links */
