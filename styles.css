@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background: radial-gradient(circle at 20% 30%,#1a2a6c, #000033, #000011);
+    background: radial-gradient(circle at 20% 30%,#071238, #000033, #000011);
     color: #ecdde7;
     font-family: 'Roboto', sans-serif;
     display: flex;
