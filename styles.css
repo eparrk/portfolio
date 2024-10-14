@@ -93,6 +93,7 @@ p {
     color: #555; /* Paragraph text color */
 }
 
+/* About Section */
 #about {
     max-width: 800px;
     margin: 0 auto;
@@ -103,6 +104,10 @@ p {
     text-align: justify;
     line-height: 1.6;
     font-size: 1rem;
+}
+
+.about-text.additional {
+    margin-top: 20px;
 }
 
 /* Experience Section */
