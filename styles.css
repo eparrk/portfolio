@@ -153,12 +153,11 @@ p {
 
 /* Projects Section */
 #projects {
-    padding: 20px;
-    width: 100%;
-    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+    width: 100%;
 }
 
 .container {
@@ -167,7 +166,7 @@ p {
 }
 
 .projects-card {
-    width: 70%;
+    width: 80%;
     max-width: 900px;
     padding: 20px;
     margin-bottom: 20px;
@@ -179,7 +178,7 @@ p {
 
 .project-details {
     list-style-position: inside;
-    padding-left: 0;
+    padding-left: 15px;
     margin-top: 10px;
     font-size: 0.9em;
     line-height: 1.4;
