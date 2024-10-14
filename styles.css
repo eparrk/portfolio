@@ -288,6 +288,7 @@ color: #ecdde7;
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+    padding-bottom: 0.5em;
 }
 
 /* Company and Department Styling */
@@ -302,12 +303,14 @@ color: #ecdde7;
 /* Job Title and Dates */
 .job-title {
     text-align: left;
-    flex: 1;
+    color: #000033;
 }
 
 .dates {
     text-align: right;
-    flex: 1;
+    color: #000033;
+    font-weight: normal;
+    font-size: 0.9em;
 }
 
 /* Contact Links */
