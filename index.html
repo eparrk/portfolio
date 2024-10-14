@@ -8,6 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header nav a.active {
+            color: #eea1c7;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
@@ -27,6 +37,18 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
+
+    <section id="about">
+        <h2>About</h2>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+    </section>
+
+    <section id="contract">
+        <h2>Contract</h2>
+    </section>
 
     <!-- About Section -->
     <section id="about">
@@ -137,15 +159,27 @@
 
     <!-- Smooth Scrolling JavaScript -->
     <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+        // JavaScript for highlighting the active link
+        document.addEventListener("scroll", () => {
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll("header nav a");
+    
+            let currentSection = "";
+    
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 50) {
+                    currentSection = section.getAttribute("id");
+                }
+            });
+    
+            navLinks.forEach(link => {
+                link.classList.remove("active");
+                if (link.getAttribute("href").substring(1) === currentSection) {
+                    link.classList.add("active");
+                }
             });
         });
     </script>
-
 </body>
 </html>
