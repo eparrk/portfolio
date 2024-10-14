@@ -26,7 +26,7 @@ body {
 
 /* Ensure specific sections and headings are also pink */
 h1, h2, h3, h4, h5, h6, p, a, span, li {
-    color: #ecdde7; /* Ensures all headings are this color */
+    color: #ecdde7 !important; /* Ensures all headings are this color */
 }
 
 /* Ensure the canvas covers the full background */
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 
 .hero-subtext {
     font-size: 1.2rem;
-    color: #cccccc; /* Subtext color */
+    color: #ecdde7; /* Subtext color */
 }
 
 /* Navigation Bar Style */
@@ -75,10 +75,10 @@ header {
     top: 0;
     width: 100%;
     padding: 1rem;
-    background-color: rgba(245, 245, 245, 0.9); /* Slightly transparent background */
+    background-color: rgba(5, 5, 5, 0.9); /* Slightly transparent background */
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid #ddd; /* Border color */
+    border-bottom: 1px solid #333; /* Border color */
     z-index: 10;
 }
 
@@ -105,7 +105,7 @@ section {
 
 h2 {
     font-size: 1.8rem;
-    color: #333; /* Section heading color */
+    color: #ecdde7; /* Section heading color */
     margin-bottom: 1rem;
     font-weight: bold;
 }
@@ -113,7 +113,7 @@ h2 {
 p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #555; /* Paragraph text color */
+    color: #ecdde7; /* Paragraph text color */
 }
 
 /* About Section */
@@ -129,6 +129,7 @@ p {
     text-align: justify;
     line-height: 1.6;
     font-size: 1rem;
+    color: #ecdde7;
 }
 
 .about-text.additional {
@@ -137,7 +138,7 @@ p {
 
 #skills {
     background-color: transparent;
-    color: #ffffff;
+    color: #ecdde7;
     padding: 40px 0;
     text-align: center;
 }
@@ -185,6 +186,7 @@ p {
     align-items: center;
     width: 100%;
     background: transparent;
+    color: #ecdde7;
 }
 
 .container {
@@ -201,11 +203,11 @@ p {
     max-width: 1000px;
     padding: 20px;
     margin: 20px auto;
-    border: 1px solid #ddd;
+    border: 1px solid #333;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: rgba(255,255,255,0.1);
-    color: #ffffff;
+    background: rgba(20,20,20,0.8);
+    color: #ecdde7;
 }
 
 .project-details {
@@ -215,6 +217,7 @@ p {
     margin-top: 10px;
     font-size: 0.9em;
     line-height: 1.4;
+    color: #ecdde7;
     text-align: left;
 }
 
@@ -254,7 +257,7 @@ p {
 #contact {
     padding: 20px;
     background: transparent;
-    color: #ffffff;
+    color: #ecdde7;;
 }
 
 .contact-links a {
@@ -262,7 +265,7 @@ p {
 }
 
 .contact-links a:hover {
-    color: #ecdde7; /* Pink hover color */
+    color: #eea1c7; /* Pink hover color */
 }
 
 /* Footer */
@@ -271,8 +274,8 @@ footer {
     padding: 1rem;
     font-size: 0.8rem;
     color: #ecdde7; /* Footer text color */
-    border-top: 1px solid #ddd; /* Border color */
-    background: transparent
+    border-top: 1px solid #333; /* Border color */
+    background: transparent;
 }
 
 /* Responsive Design */
