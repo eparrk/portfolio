@@ -219,14 +219,14 @@ color: #ecdde7;
     border: 1px solid #333;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: #c60202(20,20,20,0.8);
+    background: #f7f7f7;
     color: #333333;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Project Card Hover Effect */
 .projects-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
