@@ -21,12 +21,11 @@ body {
     font-size: 16px;
     line-height: 1.6;
     padding: 20px;
-    overflow: hidden;
 }
 
 /* Ensure the canvas covers the full background */
 .canvas-background {
-    position: absollute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;

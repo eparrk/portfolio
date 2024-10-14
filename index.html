@@ -176,7 +176,7 @@
         // Resize canvas to cover the entire document height
         function resizeCanvas() {
             canvas.width = window.innerWidth;
-            canvas.height = document.documentElement.scrollHeight; // Adjusts to full document height
+            canvas.height = Math.max(document.documentElement.scrollHeight, window.innerHeight); // Adjusts to full document height
         }
         resizeCanvas();
         window.addEventListener('resize', resizeCanvas);
@@ -207,7 +207,7 @@
 
         // Start the animation
         animateFloralBackground();
-        
+
     </script>
 </body>
 </html>
