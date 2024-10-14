@@ -130,9 +130,10 @@
             const navLinks = document.querySelectorAll("header nav a");
     
             let currentSection = "";
-    
+
+            // Loop through each section to find the one currently in view
             sections.forEach(section => {
-                const sectionTop = section.offsetTop - 70;
+                const sectionTop = section.offsetTop - 80;
                 const sectionBottom = sectionTop + section.offsetHeight;
 
                 if (pageYOffset >= sectionTop && pageYOffset < sectionBottom) {
@@ -154,7 +155,7 @@
                 e.preventDefault();
                 const targetId = this.getAttribute('href').substring(1);
                 const targetSection = document.getElementById(targetId);
-                const headerOffset = 70; // Adjust this value to the heigh of the header 
+                const headerOffset = 80; // Adjust this value to the heigh of the header 
 
                 const elementPosition = targetSection.offsetTop;
                 const offsetPosition = elementPosition - headerOffset;
