@@ -172,11 +172,37 @@ p {
     color: #ecdde7; /* Text color */
 }
 
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures it adjusts on smaller screens */
+}
+
+.about-photo {
+    flex: 1;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 100%;
+    border-radius: 50%; /* Makes the photo circular */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
 .about-text {
+    flex: 2;
     text-align: justify;
     line-height: 1.6;
-    font-size: 1rem;
-    color: #ecdde7;
 }
 
 .about-text.additional {
