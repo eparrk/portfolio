@@ -164,9 +164,18 @@ p {
     width: 100%;
 }
 
-.projects-card {
+.container {
     width: 100%;
-    max-width: 800%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.projects-card {
+    width: 95%;
+    max-width: 850%;
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
@@ -234,6 +243,10 @@ p {
     display: block;
     font-weight: normal;
     font-style: italic;
+    color: gray;
+}
+
+.branch {
     color: gray;
 }
 
