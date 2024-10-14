@@ -133,7 +133,12 @@ p {
 }
 
 .about-text.additional {
+    text-align: center;
     margin-top: 20px;
+}
+
+.about-text.additional::after {
+    content: "🥰";
 }
 
 #skills {
