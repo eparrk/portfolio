@@ -248,6 +248,7 @@ color: #ecdde7;
     background: #ecdde7;
     color: #000033;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
 }
 
 .projects-card h2, 
@@ -273,7 +274,7 @@ color: #ecdde7;
     margin-top: 10px;
     font-size: 0.9em;
     line-height: 1.4;
-    color: #ecdde7;
+    color: #000033;
     text-align: left;
 }
 
