@@ -11,12 +11,14 @@ html {
 }
 
 body {
+    background: radial-gradient(circle at 20% 30%, #1a2a6c, #b21f1f, #fdbb2d);
+    background-color: #000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: #333; /* Main text color */
-    background-color: #fafafa; /* Background color */
     font-size: 16px;
     line-height: 1.6;
     padding: 20px;
