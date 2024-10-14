@@ -183,44 +183,66 @@
         resizeCanvas();
         window.addEventListener('resize', resizeCanvas);
 
-        // Function to draw a single petal
-        function drawPetal(x, y, angle, size, opacity) {
-            ctx.fillStyle = `rgba(255, 182, 193, ${opacity})`; // Light pink petal color
+        // Function to draw a line segment for a single petal
+        function drawLineSegment(startX, startY, endX, endY, color, lineWidth) {
+            ctx.strokeStyle = color;
+            ctx.lineWidth = lineWidth;
             ctx.beginPath();
-            ctx.ellipse(
-                x + Math.cos(angle) * size, 
-                y + Math.sin(angle) * size, 
-                size / 2, 
-                size / 4, 
-                angle, 
-                0, 
-                2 * Math.PI
-            );
-            ctx.fill();
+            ctx.moveTo(startX, startY);
+            ctx.lineTo(endX, endY);
+            ctx.stroke();
         }
 
-        // Function to draw a complete flower
+        // Function to draw a single flower with animated line segments
         function drawFlower(x, y) {
-            const petalCount = 5;  // Number of petals per flower
-            const size = 30;       // Size of each petal
-            const opacity = 0.7;   // Opacity for a soft appearance
-            let currentPetal = 0;
+            const petalColor = "#d291bc"; // Elegant pink color for petals
+            const stemColor = "#888"; // Grey color for stem
+            const lineWidth = 1.5;
+            let segmentIndex = 0;
 
-            // Draw each petal with a delay to simulate hand-drawing
-            const interval = setInterval(() => {
-                if (currentPetal >= petalCount) {
-                    clearInterval(interval);  // Stop when all petals are drawn
+            // Define each segment of the flower as start and end points
+            const flowerSegments = [
+                // Stem segments
+                { startX: x, startY: y, endX: x, endY: y + 30, color: stemColor }, // stem part 1
+                { startX: x, startY: y + 30, endX: x + 5, endY: y + 45, color: stemColor }, // stem part 2
+
+                // Petal segments (drawn clockwise around the stem)
+                { startX: x, startY: y, endX: x - 15, endY: y - 20, color: petalColor },
+                { startX: x - 15, startY: y - 20, endX: x, endY: y - 35, color: petalColor },
+                { startX: x, startY: y - 35, endX: x + 15, endY: y - 20, color: petalColor },
+                { startX: x + 15, startY: y - 20, endX: x, endY: y, color: petalColor },
+
+                // Leaf on the stem
+                { startX: x, startY: y + 20, endX: x - 10, endY: y + 30, color: petalColor },
+                { startX: x - 10, startY: y + 30, endX: x, endY: y + 40, color: petalColor }
+            ];
+
+            // Function to draw each segment in sequence
+            function drawNextSegment() {
+                if (segmentIndex >= flowerSegments.length) {
+                    clearInterval(segmentInterval);
                     return;
                 }
 
-                // Calculate angle for each petal to space them around a central point
-                const angle = (Math.PI * 2 / petalCount) * currentPetal;
-                drawPetal(x, y, angle, size, opacity);
-                currentPetal++;
-            }, 200); // Delay between each petal in milliseconds
+                // Get the current segment and draw it
+                const segment = flowerSegments[segmentIndex];
+                drawLineSegment(
+                    segment.startX,
+                    segment.startY,
+                    segment.endX,
+                    segment.endY,
+                    segment.color,
+                    lineWidth
+                );
+
+                segmentIndex++;
+            }
+
+            // Draw each segment with a delay to create the "drawing" effect
+            const segmentInterval = setInterval(drawNextSegment, 150);
         }
 
-        // Function to draw flowers at random positions with a delay
+        // Function to initiate drawing flowers in random positions
         function animateFlowers() {
             const x = Math.random() * canvas.width;
             const y = Math.random() * canvas.height;
@@ -233,5 +255,6 @@
         // Start the flower drawing animation
         animateFlowers();
     </script>
+
 </body>
 </html>
