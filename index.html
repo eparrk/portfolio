@@ -138,8 +138,8 @@
             let currentSection = "";
     
             sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 50) {
+                const sectionTop = section.offsetTop - 70;
+                if (pageYOffset >= sectionTop) {
                     currentSection = section.getAttribute("id");
                 }
             });
@@ -149,6 +149,24 @@
                 if (link.getAttribute("href").substring(1) === currentSection) {
                     link.classList.add("active");
                 }
+            });
+        });
+
+        // Smooth scroll with offset for header
+        document.querySelectorAll('header nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                const headerOffset = 70; // Adjust this value to the heigh of the header 
+
+                const elementPosition = targetSection.offsetTop;
+                const offsetPosition = elementPosition - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
             });
         });
     </script>
