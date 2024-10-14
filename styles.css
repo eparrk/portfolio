@@ -26,7 +26,7 @@ body {
 
 /* Ensure the canvas covers the full background */
 .canvas-background {
-    position: fixed;
+    position: absollute;
     top: 0;
     left: 0;
     width: 100vw;

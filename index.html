@@ -13,7 +13,7 @@
 
     <!-- Canvas for interactive floral background -->
     <canvas class="canvas-background"></canvas>
-    
+
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero-content">
@@ -170,6 +170,44 @@
             });
         });
 
+        const canvas = document.querySelector('.canvas-background');
+        const ctx = canvas.getContext('2d');
+
+        // Resize canvas to cover the entire document height
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = document.documentElement.scrollHeight; // Adjusts to full document height
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        // Function to draw a flower petal
+        function drawPetal(x, y, size, opacity) {
+            ctx.fillStyle = `rgba(255, 182, 193, ${opacity})`; // Light pink with variable opacity
+            ctx.beginPath();
+            ctx.ellipse(x, y, size, size / 2, Math.PI / 4, 0, 2 * Math.PI); // Petal shape
+            ctx.fill();
+        }
+
+        // Animate the floral effect
+        function animateFloralBackground() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            for (let i = 0; i < 10; i++) { // Number of petals per frame
+                const x = Math.random() * canvas.width;
+                const y = Math.random() * canvas.height;
+                const size = Math.random() * 20 + 10; // Random size between 10 and 30
+                const opacity = Math.random() * 0.2 + 0.1; // Faint opacity between 0.1 and 0.3
+
+                drawPetal(x, y, size, opacity);
+            }
+
+            requestAnimationFrame(animateFloralBackground);
+        }
+
+        // Start the animation
+        animateFloralBackground();
+        
     </script>
 </body>
 </html>
