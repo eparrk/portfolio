@@ -240,6 +240,20 @@ p {
     }
 }
 
+/* Card Styles */
+.project-card {
+    width: 400px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    .project-card {
+        width: 90%;
+    }
+}
+
 /* Contact Links */
 .contact-links a {
     display: inline-block;
