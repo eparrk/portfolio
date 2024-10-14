@@ -224,6 +224,16 @@ color: #ecdde7;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.projects-card h2, 
+.projects-card p, 
+.projects-card li, 
+.projects-card .projects-header, 
+.projects-card .company-department, 
+.projects-card .job-title, 
+.projects-card .dates {
+    color: #000033 !important; /* Override global settings */
+}
+
 /* Project Card Hover Effect */
 .projects-card:hover {
     transform: scale(1.02);
