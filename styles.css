@@ -96,6 +96,29 @@ header nav a.active {
     color: #eea1c7; /* Pink highlight on hover */
 }
 
+/* Title Styling */
+h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Underline Highlight Effect */
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.3em;
+    width: 100%;
+    background-color: #ee5c5c;
+    z-index: -1;
+    padding: 0 5px;
+
+}
+
 /* Section Styles */
 section {
     padding: 2rem 1rem;
@@ -138,7 +161,7 @@ p {
 }
 
 .about-text.additional::after {
-    content: "🥰";
+    content: " 🥰";
 }
 
 #skills {
