@@ -175,9 +175,9 @@ p {
 
 .projects-card {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     padding: 20px;
-    margin: 0 ato 20px auto;
+    margin: 20px auto;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -217,7 +217,7 @@ p {
 
 .project-details li {
     margin-bottom: 5px;
-    padding-left: 1.5rem;
+    padding-left: 0.5rem;
 }
 
 /* Header within each card */
@@ -230,11 +230,10 @@ p {
 /* Company and Department Styling */
 .company-department {
     text-align: left;
-    margin-top: 5px;
     font-size: 0.9em;
     color: gray;
     font-style: italic;
-    display: block;
+    margin-top: 5px;
 }
 
 /* Job Title and Dates */
