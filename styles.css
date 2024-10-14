@@ -167,13 +167,36 @@ p {
 }
 
 .projects-card {
-    width: 100vw;
+    width: 90%;
+    max-width: 1200px;
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 1024px) {
+    .projects-card {
+        max-width: 800px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-card {
+        max-width: 600px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects-card {
+        width: 90%;
+        padding: 10px;
+    }
 }
 
 .project-details {
@@ -222,17 +245,6 @@ p {
     color: gray;
 }
 
-/* Project Details */
-.project-details {
-    list-style: disc;
-    padding-left: 20px;
-    margin-top: 10px;
-    font-size: 0.9em;
-    line-height: 1.4;
-    text-align: justify;
-}
-
-/* Responsive Design for Projects */
 @media (min-width: 1200px) {
     .projects-card {
         width: 95%;
