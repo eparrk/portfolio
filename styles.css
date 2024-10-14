@@ -166,7 +166,7 @@ p {
 }
 
 .projects-card {
-    width: 80%;
+    width: 70%;
     max-width: 1200px;
     padding: 20px;
     margin-bottom: 20px;
@@ -177,8 +177,8 @@ p {
 }
 
 .project-details {
-    list-style: disc;
-    padding-left: 20px;
+    list-style-position: inside;
+    padding-left: 0;
     margin-top: 10px;
     font-size: 0.9em;
     line-height: 1.4;
@@ -187,7 +187,7 @@ p {
 
 .project-details li {
     margin-bottom: 5px;
-    padding-left: 10px;
+    padding-left: 1rem;
 }
 
 /* Header within each card */
