@@ -110,6 +110,47 @@ p {
     margin-top: 20px;
 }
 
+#skills {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: linear-gradient(135deg, #ff00a5, #00c9ff);
+    border-radius: 10px;
+    padding: 15px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
 /* Experience Section */
 #experience {
     padding: 20px;
