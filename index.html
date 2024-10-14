@@ -169,11 +169,13 @@
                 });
             });
         });
+    </script>
 
+    <script>
         const canvas = document.querySelector('.canvas-background');
         const ctx = canvas.getContext('2d');
 
-        // Resize canvas to cover the entire document height
+        // Resize canvas to cover the entire viewport
         function resizeCanvas() {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
@@ -181,33 +183,55 @@
         resizeCanvas();
         window.addEventListener('resize', resizeCanvas);
 
-        // Function to draw a flower petal
-        function drawPetal(x, y, size, opacity) {
-            ctx.fillStyle = `rgba(255, 182, 193, ${opacity})`; // Light pink with variable opacity
+        // Function to draw a single petal
+        function drawPetal(x, y, angle, size, opacity) {
+            ctx.fillStyle = `rgba(255, 182, 193, ${opacity})`; // Light pink petal color
             ctx.beginPath();
-            ctx.ellipse(x, y, size, size * 0.6, Math.PI / 4, 0, 2 * Math.PI); // Petal shape
+            ctx.ellipse(
+                x + Math.cos(angle) * size, 
+                y + Math.sin(angle) * size, 
+                size / 2, 
+                size / 4, 
+                angle, 
+                0, 
+                2 * Math.PI
+            );
             ctx.fill();
         }
 
-        // Animate the floral effect
-        function animateFloralBackground() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        // Function to draw a complete flower
+        function drawFlower(x, y) {
+            const petalCount = 5;  // Number of petals per flower
+            const size = 30;       // Size of each petal
+            const opacity = 0.7;   // Opacity for a soft appearance
+            let currentPetal = 0;
 
-            for (let i = 0; i < 3; i++) { // Number of petals per frame
-                const x = Math.random() * canvas.width;
-                const y = Math.random() * canvas.height;
-                const size = Math.random() * 40 + 20; 
-                const opacity = Math.random() * 0.15 + 0.05;
+            // Draw each petal with a delay to simulate hand-drawing
+            const interval = setInterval(() => {
+                if (currentPetal >= petalCount) {
+                    clearInterval(interval);  // Stop when all petals are drawn
+                    return;
+                }
 
-                drawPetal(x, y, size, opacity);
-            }
-
-            requestAnimationFrame(animateFloralBackground);
+                // Calculate angle for each petal to space them around a central point
+                const angle = (Math.PI * 2 / petalCount) * currentPetal;
+                drawPetal(x, y, angle, size, opacity);
+                currentPetal++;
+            }, 200); // Delay between each petal in milliseconds
         }
 
-        // Start the animation
-        animateFloralBackground();
+        // Function to draw flowers at random positions with a delay
+        function animateFlowers() {
+            const x = Math.random() * canvas.width;
+            const y = Math.random() * canvas.height;
+            drawFlower(x, y);
 
+            // Draw a new flower every 2 seconds
+            setTimeout(animateFlowers, 2000);
+        }
+
+        // Start the flower drawing animation
+        animateFlowers();
     </script>
 </body>
 </html>
