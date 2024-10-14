@@ -177,12 +177,12 @@ p {
 }
 
 .project-details {
-    list-style-position: inside;
-    padding-left: 15px;
+    list-style-position: outside;
+    padding-left: 20px;
     margin-top: 10px;
     font-size: 0.9em;
     line-height: 1.4;
-    text-align: justify;
+    text-align: left;
 }
 
 .project-details li {
