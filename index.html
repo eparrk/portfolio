@@ -133,7 +133,9 @@
     
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - 70;
-                if (pageYOffset >= sectionTop) {
+                const sectionBottom = sectionTop + section.offsetHeight;
+
+                if (pageYOffset >= sectionTop && pageYOffset < sectionBottom) {
                     currentSection = section.getAttribute("id");
                 }
             });
