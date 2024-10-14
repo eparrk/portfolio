@@ -219,7 +219,7 @@ color: #ecdde7;
     border: 1px solid #333;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: #f7f7f7;
+    background: #ecdde7;
     color: #333333;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -237,7 +237,7 @@ color: #ecdde7;
     margin-top: 10px;
     font-size: 0.9em;
     line-height: 1.4;
-    color: #ecdde7;
+    color: #000033;
     text-align: left;
 }
 
