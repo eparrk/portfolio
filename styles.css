@@ -11,8 +11,8 @@ html {
 }
 
 body {
-    background: #f5f5dc;
-    color: #333333;
+    background: #000204;
+    color: #ecdde7;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
@@ -21,6 +21,14 @@ body {
     font-size: 16px;
     line-height: 1.6;
     padding: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #ecdde7; /* Ensures all headings are this color */
+}
+
+p,a,span,li {
+    color: #ecdde7;
 }
 
 /* Ensure the canvas covers the full background */
@@ -78,7 +86,7 @@ header {
 
 header nav a {
     margin: 0 1.5rem;
-    color: #333; /* Link text color */
+    color: #ecdde7; /* Link text color */
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
@@ -169,7 +177,7 @@ p {
 
 .skill-card p {
     font-size: 0.9rem;
-    color: #ffffff;
+    color: #ecdde7;
 }
 
 /* Projects Section */
@@ -253,11 +261,11 @@ p {
 }
 
 .contact-links a {
-    color: #fcbef1;
+    color: #ecdde7;
 }
 
 .contact-links a:hover {
-    color: #f4c7f2; /* Pink hover color */
+    color: #ecdde7; /* Pink hover color */
 }
 
 /* Footer */
@@ -265,7 +273,7 @@ footer {
     margin-top: 2rem;
     padding: 1rem;
     font-size: 0.8rem;
-    color: #ffffff; /* Footer text color */
+    color: #ecdde7; /* Footer text color */
     border-top: 1px solid #ddd; /* Border color */
     background: transparent
 }
