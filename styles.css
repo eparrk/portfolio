@@ -96,27 +96,26 @@ header nav a.active {
     color: #eea1c7; /* Pink highlight on hover */
 }
 
-/* Title Styling */
+/* Title Styling with Shadow and Highlight */
 h2 {
-    position: relative;
-    display: inline-block;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #ffffff;
     font-weight: bold;
+    position: relative;
+    text-shadow: 
+        -2px -2px 0 #e63946,
+        2px 2px 0 #e63946,
+        4px 4px 0 #c53030;
 }
 
-/* Underline Highlight Effect */
-h2::after {
-    content: "";
+h2::before {
+    content: attr(data-text);
     position: absolute;
+    top: 0;
     left: 0;
-    bottom: 0;
-    height: 0.3em;
-    width: 100%;
-    background-color: #ee5c5c;
     z-index: -1;
-    padding: 0 5px;
-
+    color: #e63946;
+    transform: translate(5px, 5px);
 }
 
 /* Section Styles */
