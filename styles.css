@@ -293,11 +293,11 @@ color: #ecdde7;
     max-width: 1000px;
     padding: 20px;
     margin: 20px auto;
-    border: 1px solid #333;
+    border: 1px solid #ecdde7;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: #ecdde7;
-    color: #000033;
+    background: #151b66;
+    color: #ecdde7; /* Font color */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
 }
