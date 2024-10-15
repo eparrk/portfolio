@@ -295,7 +295,7 @@ color: #ecdde7;
     max-width: 1000px;
     padding: 20px 20px 20px 30px; /* Adds extra space on the left side */
     margin: 20px auto;
-    border: 1px solid #e66666;
+    border: 1px solid #ecdde7;
     border-radius: 8px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     background: linear-gradient(135deg, #151b66, #1d256e);
@@ -443,7 +443,7 @@ color: #ecdde7;
 
 .project-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
 }
 
 /* Responsive adjustments for smaller screens */
