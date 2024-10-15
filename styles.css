@@ -479,22 +479,56 @@ color: #ecdde7;
     width: 50px;
     height: 3px;
     background-color: #e66666;
-    margin: 10px auto;
+    margin: 10px auto 20px;
 }
 
-.contact-links a {
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
     color: #ecdde7;
-    font-size: 1.1rem;
-    text-decoration: none;
-    transition: color 0.3s ease;
 }
 
-.contact-links a:hover {
-    color: #e66666; /* Pink hover color */
+.contact-form label {
+    align-self: flex-start;
+    font-size: 1rem;
+    color: #e66666;
 }
 
-.contact-links {
-    margin-top: 10px;
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ecdde7;
+    border-radius: 5px;
+    background-color: #1d256e;
+    color: #ecdde7;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #e66666;
+    box-shadow: 0 0 5px rgba(230, 102, 102, 0.5);
+}
+
+.contact-form button {
+    background-color: #e66666;
+    color: #ecdde7;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #d55a5a;
 }
 
 /* Footer */
