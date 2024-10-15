@@ -188,6 +188,8 @@ p {
     border-radius: 50% / 70%; /* Adjust for a vertically oval shape */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     object-fit: cover; /* Ensures the image covers the shape perfectly */
+    object-position: center;
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
