@@ -406,6 +406,58 @@ color: #ecdde7;
     text-align: right;
 }
 
+#projects {
+    padding: 20px;
+    text-align: center;
+}
+
+.project-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 20px; /* Space between each card */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: #151b66;
+    color: #ecdde7;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #e66666;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1024px) {
+    .project-cards-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .project-cards-container {
+        grid-template-columns: 1fr; /* 1 card per row for mobile */
+    }
+}
+
 /* Contact Links */
 #contact {
     padding: 20px;
