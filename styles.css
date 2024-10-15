@@ -176,19 +176,16 @@ p {
     display: flex;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap; /* Ensures it adjusts on smaller screens */
 }
 
 .about-photo {
-    flex: 1;
-    max-width: 200px;
-    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .profile-photo {
-    width: 180%;
-    height: 250px;
-    border-radius: 50% / 65%; /* Makes the photo circular */
+    width: 150px;
+    height: 200px;
+    border-radius: 50% / 75%; /* Makes the photo circular */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     object-fit: cover;
 }
