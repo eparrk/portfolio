@@ -424,6 +424,7 @@ color: #ecdde7;
     color: #ecdde7;
     padding: 15px;
     border-radius: 8px;
+    border: 1px solid #ecdde7;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
