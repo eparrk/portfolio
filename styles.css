@@ -291,7 +291,7 @@ color: #ecdde7;
 .projects-card {
     width: 100%;
     max-width: 1000px;
-    padding: 20px 20px 20px 40px;
+    padding: 20px;
     margin: 20px auto;
     border: 1px solid #ecdde7;
     border-radius: 8px;
@@ -310,7 +310,8 @@ color: #ecdde7;
 .projects-card .company, 
 .projects-card .job-title, 
 .projects-card .dates {
-    padding-left: 20px;
+    color: #ecdde7;
+    font-size: 0.9 rem;
 }
 
 .projects-card .job-title {
