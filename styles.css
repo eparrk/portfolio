@@ -293,7 +293,7 @@ color: #ecdde7;
 .projects-card {
     width: 100%;
     max-width: 1000px;
-    padding: 20px 20px 20px 30px;
+    padding: 20px 20px 20px 30px; /* Adds extra space on the left side */
     margin: 20px auto;
     border: 1px solid #ecdde7;
     border-radius: 8px;
@@ -302,12 +302,23 @@ color: #ecdde7;
     color: #ecdde7; /* Font color */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
-    font-size: 0.9 rem;
+    font-size: 0.9rem;
+    overflow-wrap: break-word; /* Ensures text stays within the box */
+    word-break: break-word; /* Prevents overflow */
+}
+
+.projects-card ul {
+    padding-left: 1.5rem; /* Additional space for bullet points */
+    list-style-position: inside; /* Keeps bullets inside the padding */
+}
+
+.projects-card li {
+    margin-bottom: 5px; /* Space between list items */
+    line-height: 1.4;
 }
 
 .projects-card h2, 
 .projects-card p, 
-.projects-card li, 
 .projects-card .projects-header, 
 .projects-card .company, 
 .projects-card .job-title, 
