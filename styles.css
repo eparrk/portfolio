@@ -186,9 +186,11 @@ p {
 }
 
 .profile-photo {
-    width: 100%;
-    border-radius: 50%; /* Makes the photo circular */
+    width: 180%;
+    height: 250px;
+    border-radius: 50% / 65%; /* Makes the photo circular */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {
