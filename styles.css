@@ -183,11 +183,11 @@ p {
 }
 
 .profile-photo {
-    width: 150px;
-    height: 200px;
-    border-radius: 50% / 75%; /* Makes the photo circular */
+    width: 180px; /* Increase width */
+    height: 240px; /* Increase height for a larger oval */
+    border-radius: 50% / 70%; /* Adjust for a vertically oval shape */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    object-fit: cover;
+    object-fit: cover; /* Ensures the image covers the shape perfectly */
 }
 
 @media (max-width: 768px) {
