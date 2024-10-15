@@ -271,6 +271,108 @@ font-size: 50px;
 color: #ecdde7;
 }
 
+/* Education Section */
+#education {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: transparent;
+    color: #ecdde7;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.education-card {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px 20px 20px 30px; /* Adds extra space on the left side */
+    margin: 20px auto;
+    border: 1px solid #ecdde7;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #151b66, #1d256e);
+    color: #ecdde7; /* Font color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    font-size: 0.9rem;
+    overflow-wrap: break-word; /* Ensures text stays within the box */
+    word-break: break-word; /* Prevents overflow */
+}
+
+.education-card .school-name {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.education-card .degree {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.education-card .specialization {
+    font-style: italic;
+    display: block;
+    margin-bottom: 10px;
+    color: #d1d1d1;
+}
+
+.education-card .date {
+    text-align: right;
+    color: #ecdde7;
+}
+
+/* Education Card Hover Effect */
+.education-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+}
+
+.education-details {
+    list-style: disc;
+    list-style-position: inside;
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #000033;
+    text-align: left;
+}
+
+/* Header within each card */
+.education-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 0.5em;
+    text-align: left;
+}
+
+/* School name and Dates */
+.school-name {
+    color: #000033;
+    font-weight: bold;
+    flex: 1;
+}
+
+.dates {
+    color: #000033;
+    font-size: 0.9em;
+    font-weight: normal;
+    min-width: 100px;
+    text-align: right;
+}
+
 /* Experience Section */
 #experience {
     padding: 20px;
