@@ -311,7 +311,7 @@ color: #ecdde7;
 .projects-card .job-title, 
 .projects-card .dates {
     color: #ecdde7;
-    font-size: 0.9 rem;
+    font-size: 0.9rem; /* Corrected font-size */
 }
 
 .projects-card .job-title {
