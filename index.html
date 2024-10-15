@@ -184,6 +184,10 @@
                 <img src="svg/icons/SAP.svg" alt="SAP Icon" class="skill-icon">
                 <p>SAP</p>
             </div>
+            <div class="skill-card">
+                <img src="svg/icons/PowerBI.svg" alt="PowerBI Icon" class="skill-icon">
+                <p>PowerBI</p>
+            </div>
         </div>
     </section>
 
@@ -257,18 +261,17 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <hr class="divider">
         <p>Feel free to reach out through any of my platforms!</p>
         <form class="contact-form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-    
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-    
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-    
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <textarea id="message" rows="4" placeholder="Message"></textarea>
+            </div>
             <button type="submit">Submit</button>
         </form>
     </section>
