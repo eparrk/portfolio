@@ -270,8 +270,8 @@ font-size: 50px;
 color: #ecdde7;
 }
 
-/* Projects Section */
-#projects {
+/* Experience Section */
+#experience {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -290,7 +290,7 @@ color: #ecdde7;
     margin: 0 auto;
 }
 
-.projects-card {
+.experience-card {
     width: 100%;
     max-width: 1000px;
     padding: 20px 20px 20px 30px; /* Adds extra space on the left side */
@@ -307,56 +307,56 @@ color: #ecdde7;
     word-break: break-word; /* Prevents overflow */
 }
 
-.projects-card ul {
+.experience-card ul {
     padding-left: 1.5rem; /* Additional space for bullet points */
     list-style-position: inside; /* Keeps bullets inside the padding */
 }
 
-.projects-card li {
+.experience-card li {
     margin-bottom: 5px; /* Space between list items */
     line-height: 1.4;
 }
 
-.projects-card h2, 
-.projects-card p, 
-.projects-card .projects-header, 
-.projects-card .company, 
-.projects-card .job-title, 
-.projects-card .dates {
+.experience-card h2, 
+.experience-card p, 
+.experience-card .exprience-header, 
+.experience-card .company, 
+.experience-card .job-title, 
+.experience-card .dates {
     color: #ecdde7;
     font-size: 0.9 rem;
 }
 
-.projects-card .job-title {
+.experience-card .job-title {
     font-weight: bold;
     font-size: 1rem;
 }
 
-.projects-card .company {
+.experience-card .company {
     font-weight: bold;
     display: block;
     margin-top: 10px;
 }
 
-.projects-card .branch {
+.experience-card .branch {
     font-style: italic;
     display: block;
     margin-bottom: 10px;
     color: #d1d1d1;
 }
 
-.projects-card .dates {
+.experience-card .dates {
     text-align: right;
     color: #ecdde7;
 }
 
-/* Project Card Hover Effect */
-.projects-card:hover {
+/* Experience Card Hover Effect */
+.exprience-card:hover {
     transform: scale(1.02);
     box-shadow: 0 6px 12px rgba(255,255,255,0.2);
 }
 
-.project-details {
+.experience-details {
     list-style: disc;
     list-style-position: inside;
     padding-left: 20px;
@@ -367,13 +367,13 @@ color: #ecdde7;
     text-align: left;
 }
 
-.project-details li {
+.experience-details li {
     margin-bottom: 5px;
     padding-left: 0.5rem;
 }
 
 /* Header within each card */
-.projects-header {
+.experience-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
