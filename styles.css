@@ -430,7 +430,9 @@ footer {
     color: #ecdde7;
     text-align: center;
     border-top: 1px solid #333; /* Border color */
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 .footer-content {
@@ -446,12 +448,10 @@ footer {
 }
 
 .footer-icons a {
-    .footer-icons a {
         color: #ecdde7;
         margin: 0 0.5rem;
         font-size: 1.5rem;
         transition: color 0.3s;    
-    }
 }
 
 .footer-icons a:hover {
