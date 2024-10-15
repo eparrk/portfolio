@@ -295,9 +295,9 @@ color: #ecdde7;
     max-width: 1000px;
     padding: 20px 20px 20px 30px; /* Adds extra space on the left side */
     margin: 20px auto;
-    border: 1px solid #ecdde7;
+    border: 1px solid #e66666;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     background: linear-gradient(135deg, #151b66, #1d256e);
     color: #ecdde7; /* Font color */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -353,7 +353,7 @@ color: #ecdde7;
 /* Experience Card Hover Effect */
 .experience-card:hover {
     transform: scale(1.02);
-    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
 }
 
 .experience-details {
