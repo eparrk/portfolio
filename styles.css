@@ -144,7 +144,7 @@ header nav a:focus,
 }
 
 header nav a.resume-button {
-    color: #e66666; /* Text color */
+    color: #e66666 !important; /* Text color */
     font-weight: bold;
     text-decoration: none;
 }
