@@ -143,6 +143,21 @@ header nav a:focus,
     outline-offset: 3px;
 }
 
+header nav a.resume-button {
+    background-color: #e66666; /* Button background color */
+    color: #ffffff; /* Text color */
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+header nav a.resume-button:hover {
+    background-color: #cc5555; /* Darker color on hover */
+}
+
+
 /* Title Styling with Shadow and Highlight */
 h2 {
     position: relative;
@@ -239,23 +254,6 @@ p {
 /* Apply new font to the entire About Section */
 #about, .about-container, .about-text {
     font-family: ' Lora', sans-serif; /* Replace 'Montserrat' with your chosen font */
-}
-
-.resume-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    color: #ffffff;
-    background-color: #e66666;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-colour 0.3s ease;
-}
-
-.resume-button:hover {
-    background-color: #cc5555;
 }
 
 #skills {
