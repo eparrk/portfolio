@@ -238,7 +238,7 @@ p {
 
 /* Apply new font to the entire About Section */
 #about, .about-container, .about-text {
-    font-family: 'Playfair Display', sans-serif; /* Replace 'Montserrat' with your chosen font */
+    font-family: ' Lora', sans-serif; /* Replace 'Montserrat' with your chosen font */
 }
 
 #skills {
