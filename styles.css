@@ -95,23 +95,28 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     color: #ecdde7;
     animation: bounce 1.5s infinite;
     cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .scroll-down i {
     display: block;
     font-size: 1.5rem;
     margin-top: 5px;
+    transition: transform 0.3s ease;
+}
+
+.scroll-down:hover {
+    color: #ffffff;
+}
+
+.scroll-down:hover i {
+    transform: scale(1.2);
 }
 
 @keyframes bounce {
     0%, 100% {
         transform: translateY(-10px);
     }
-}
-
-.scroll-down:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
 }
 
 /* Navigation Bar Style */
