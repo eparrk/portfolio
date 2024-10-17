@@ -298,38 +298,29 @@ p {
 
 /* Interpersonal Skills Section */
 #interpersonal-skills {
-    padding: 20px 0; /* Less padding for a more compact section */
+    padding: 10px 0; /* Less padding for a more compact section */
     text-align: center;
 }
 
 .interpersonal-card {
     display: inline-block;
-    background: rgba(135deg, #ff00a5, #00c9ff); /* Subtle transparent background */
-    border: 1px solid #ecdde7; /* Thin border to define the card */
+    background: linear-gradient(135deg, #ff00a5, #00c9ff);
+    border: 1px solid #ecdde7; /* Thin border for defining the card */
     border-radius: 6px; /* Rounded corners for a softer look */
-    padding: 10px 20px; /* Padding inside the card */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 5px 15px; /* Reduced padding for a thinner appearance */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
     font-size: 1rem;
     color: #ecdde7; /* Text color */
-    max-width: 900px; /* Max width to prevent stretching */
-    margin: 0 auto; /* Center the card */
+    max-width: 100%; /* Ensure the card spans enough width */
+    white-space: nowrap; /* Ensures text stays on one line */
+    overflow: hidden; /* Prevents text overflow */
+    text-overflow: ellipsis; /* Adds ellipsis if text exceeds width */
 }
 
 .interpersonal-card p {
     margin: 0;
     padding: 0;
     letter-spacing: 1px; /* Adds spacing between the letters */
-}
-
-.interpersonal-card p::before,
-.interpersonal-card p::after {
-    content: "|"; /* Adds vertical bar before and after the list */
-    margin: 0 10px;
-    color: #ecdde7;
-}
-
-.interpersonal-card p span:last-child::after {
-    content: none; /* Removes the final vertical bar */
 }
 
 /* Skills Bars Container */
