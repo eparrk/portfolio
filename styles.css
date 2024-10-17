@@ -139,8 +139,7 @@ header nav a.active {
 
 header nav a:focus,
 .footer-icons a:focus {
-    outline: 2px dashed #e66666;
-    outline-offset: 3px;
+    outline: none;
 }
 
 header nav a.resume-button {
