@@ -291,25 +291,6 @@ p {
     margin-bottom: 10px;
 }
 
-/* Other Skills Styling */
-.other-skills {
-    margin-top: 20px;
-}
-
-.other-skills .skill-card {
-    background: linear-gradient(135deg, #33cc33, #0099cc); /* Different gradient for non-tech skills */
-}
-.other-skills .skill-card .skill-icon {
-    font-size: 2rem;
-    color: #ecdde7;
-}
-
-/* Font Awesome Icons */
-.skill-card i.skill-icon {
-font-size: 50px;
-color: #ecdde7;
-}
-
 /* Education Section */
 #education {
     padding: 20px;
