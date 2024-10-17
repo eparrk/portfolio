@@ -241,6 +241,23 @@ p {
     font-family: ' Lora', sans-serif; /* Replace 'Montserrat' with your chosen font */
 }
 
+.resume-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #e66666;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-colour 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #cc5555;
+}
+
 #skills {
     background-color: transparent;
     color: #ecdde7;
