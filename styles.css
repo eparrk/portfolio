@@ -296,6 +296,58 @@ p {
     margin-bottom: 10px;
 }
 
+/* Interpersonal Skills Section */
+#interpersonal-skills {
+    padding: 40px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #1d256e, #151b66); /* Subtle background gradient */
+    color: #ecdde7;
+}
+
+#interpersonal-skills h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+#interpersonal-skills h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #e66666;
+    display: block;
+    margin: 0.5rem auto;
+    border-radius: 2px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    background: rgba(236,221,231,0.1);
+    padding: 15px 20px;
+    border: 1px solid #ecdde7;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255,255,255,0.3)
+}
+
 /* Education Section */
 #education {
     padding: 20px;
