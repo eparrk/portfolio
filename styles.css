@@ -149,11 +149,6 @@ header nav a.resume-button {
     text-decoration: none;
 }
 
-header nav a.resume-button:hover {
-    color: #cc5555; /* Darker color on hover */
-}
-
-
 /* Title Styling with Shadow and Highlight */
 h2 {
     position: relative;
