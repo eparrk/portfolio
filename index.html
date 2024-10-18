@@ -345,19 +345,6 @@
             });
         });
 
-        // Smooth scroll to About section on scroll-down click
-        document.getElementById("scroll-down").addEventListener("click", function() {
-            const aboutSection = document.getElementById("about");
-            const headerOffset = 80; // Offset for fixed header height
-            const elementPosition = aboutSection.offsetTop;
-            const offsetPosition = elementPosition - headerOffset;
-
-            window.scrollTo ({
-                top: offsetPosition,
-                behavior: "smooth"
-            });
-        });
-
         // Smooth scroll with offset for header
         document.querySelectorAll('header nav a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
