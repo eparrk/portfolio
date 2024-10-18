@@ -40,6 +40,49 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     pointer-events: none;
 }
 
+/* Adjusted Section Styles */
+section {
+    padding: 6rem 1rem; /* Add extra padding on the top */
+    width: 100%;
+    max-width: 800px;
+    min-height: 100vh; /* Ensure each section takes up at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+}
+
+/* Ensure header height is taken into account */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(18, 18, 64, 0.8); 
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #121240cc;
+    z-index: 10;
+    height: 70px; /* Explicit height for the header */
+}
+
+body {
+    padding-top: 70px; /* Add padding to account for the fixed header */
+    overflow-x: hidden;
+}
+
+/* Hero Section Adjustments */
+#hero {
+    height: calc(100vh - 70px); /* Subtract the height of the header */
+    padding-top: 70px; /* Add space for the fixed header */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    section {
+        padding: 4rem 1rem; /* Slightly reduce padding for smaller screens */
+    }
+}
+
 /* Hero Section */
 #hero {
     display: flex;
