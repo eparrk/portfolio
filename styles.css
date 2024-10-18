@@ -87,21 +87,22 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 }
 
 /* Scroll down message */
+/* Scroll down message */
 .scroll-down {
     position: absolute;
-    bottom: 20px; /* Ensure it is 20px from the bottom */
-    left: 50%; /* Start positioning from the center */
-    transform: translateX(-50%); /* Fully center the element */
+    bottom: 20px; /* Keep it 20px from the bottom */
+    left: 50%; /* Start positioning from the horizontal center */
+    transform: translateX(-50%); /* Correct centering */
     text-align: center;
     font-size: 1rem;
     color: #ecdde7;
     animation: bounce 1.5s infinite;
     cursor: pointer;
     transition: color 0.3s ease, transform 0.3s ease;
-    z-index: 2; /* Ensure it's above the particles background */
-    width: 100%; /* Ensure it stretches across the page for precise centering */
-    display: flex; /* Use flexbox to center content inside */
+    z-index: 2; /* Ensure it is above the background */
+    display: flex; /* Flexbox to center the internal content */
     justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
 }
 
 .scroll-down i {
