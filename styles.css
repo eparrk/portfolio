@@ -55,14 +55,13 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 
 /* Hero Section */
 #hero {
+    height: calc(90vh - 70px); /* Ensure scroll down button fits in the hero section */
+    padding-top: 70px; /* Space for the fixed header */
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    height: 100vh; /* Full screen height */
-    background: transparent; /* Background color */
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+    align-items: center;
+    position: relative; /* Position relative to enable absolute positioning of .scroll-down */
 }
 
 .hero-content {
@@ -109,6 +108,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     animation: bounce 1.5s infinite;
     cursor: pointer;
     transition: color 0.3s ease, transform 0.3s ease;
+    z-index: 2;
 }
 
 .scroll-down i {
