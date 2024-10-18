@@ -40,15 +40,15 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     pointer-events: none;
 }
 
-/* Adjusted Section Styles */
+/* Adjusted Section Styles for Consistency */
 section {
-    padding: 4rem 1rem; /* Slightly reduce top padding */
+    padding: 4rem 1rem;
     width: 100%;
     max-width: 800px;
-    min-height: 80vh; /* Reduce the height to make pages shorter */
+    min-height: 90vh; /* Set all sections to 90% of the viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center the content vertically */
+    justify-content: center;
 }
 
 /* Ensure header height is taken into account */
@@ -62,12 +62,64 @@ header {
     justify-content: flex-end;
     border-bottom: 1px solid #121240cc;
     z-index: 10;
-    height: 70px; /* Explicit height for the header */
+    height: 70px;
 }
 
 body {
     padding-top: 70px; /* Add padding to account for the fixed header */
     overflow-x: hidden;
+}
+
+/* Hero Section Adjustments */
+#hero {
+    height: calc(90vh - 70px); /* Reduce the height to 90% of the viewport minus the header height */
+    padding-top: 70px; /* Space for the fixed header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Scroll down message adjustments */
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1rem;
+    color: #ecdde7;
+    animation: bounce 1.5s infinite;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-down i {
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    transition: transform 0.3s ease;
+}
+
+.scroll-down:hover {
+    color: #ffffff;
+}
+
+.scroll-down:hover i {
+    transform: scale(1.2);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    section {
+        padding: 3rem 1rem;
+    }
 }
 
 /* Hero Section Adjustments */
