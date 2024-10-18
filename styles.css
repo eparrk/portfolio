@@ -629,9 +629,9 @@ p {
 
 /* Footer */
 footer {
-    width: 100%;
-    margin-top: 2rem;
-    padding: 1rem;
+    width: 100vw;
+    margin-top: 0;
+    padding: 1rem 0;
     background: #121240cc;
     color: #ecdde7;
     text-align: center;
