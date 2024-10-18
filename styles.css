@@ -89,16 +89,16 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 /* Scroll down message */
 .scroll-down {
     position: absolute;
-    bottom: 20px;
-    left: 50px;
-    transform: translateX(-50%);
+    bottom: 20px; /* Position the button 20px from the bottom of the viewport */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
     text-align: center;
     font-size: 1rem;
     color: #ecdde7;
     animation: bounce 1.5s infinite;
     cursor: pointer;
     transition: color 0.3s ease, transform 0.3s ease;
-    z-index: 2;
+    z-index: 2; /* Ensures it's above background elements */
 }
 
 .scroll-down i {
