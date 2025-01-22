@@ -627,52 +627,77 @@ p {
     }
 }
 
-/* Footer Styling */
+/* Footer */
 footer {
-    background-color: #222;
-    color: #fff;
+    width: 100vw;
+    margin-top: 0;
+    padding: 1rem 0;
+    background: #121240cc;
+    color: #ecdde7;
     text-align: center;
-    padding: 20px 0;
+    border-top: 1px solid #333; /* Border color */
+    position: relative;
+    bottom: 0;
 }
 
 .footer-content {
-    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.footer-content p {
-    margin: 5px 0;
-    font-size: 14px;
-    color: #ccc;
+.footer-icons {
+    display: flex;
+    justify-content: center;
 }
 
 .footer-icons a {
-    margin: 0 10px;
-    font-size: 24px;
-    color: #fff;
-    transition: color 0.3s ease;
+        color: #ecdde7;
+        margin: 0 0.5rem;
+        font-size: 1.5rem;
+        transition: color 0.3s;    
 }
 
 .footer-icons a:hover {
-    color: #00aaff; /* Change to a color that matches your theme */
+    color: #e66666;
 }
 
 .back-to-top {
     display: inline-block;
-    margin-top: 10px;
-    font-size: 18px;
-    color: #fff;
+    margin-top: 1rem;
+    color: #e66666;
+    font-size: 1.5rem;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: transform 0.3s;
 }
 
 .back-to-top:hover {
-    color: #00aaff;
+    transform: translateY(-5px);
 }
 
-/* Responsive Footer */
-@media (max-width: 768px) {
-    .footer-icons a {
-        display: inline-block;
-        margin: 10px 0;
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .projects-card {
+        max-width: 90%;
     }
+}
+
+@media (max-width: 768px) {
+    .projects-card {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects-card {
+        max-width: 90%;
+        padding: 10px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
